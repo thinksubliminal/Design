@@ -55,6 +55,10 @@
   .work-card:hover .work-overlay { background: rgba(0,0,0,0.42); }
   .work-meta { opacity: 0; transition: opacity 0.2s; }
   .work-card:hover .work-meta { opacity: 1; }
+  @media (hover: none) {
+    .work-card:hover .work-overlay { background: rgba(0,0,0,0); }
+    .work-card:hover .work-meta { opacity: 0; }
+  }
   .work-name { font-size: 13px; font-weight: 400; color: #fff; }
   .scroll-hint { display: flex; align-items: center; gap: 8px; margin-top: 14px; }
   .scroll-btn { width: 34px; height: 34px; border-radius: 50%; border: 0.5px solid rgba(0,0,0,0.2); background: #ffffff; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 14px; color: #888; transition: all 0.15s; }
@@ -83,11 +87,11 @@
     100% { clip-path: inset(0 0% 0 0); }
   }
   .intro-card { display: flex; flex-direction: column; justify-content: flex-end; padding: 24px; height: 100%; width: 100%; box-sizing: border-box; }
-  .intro-card-label { font-size: 9px; letter-spacing: 0.16em; text-transform: uppercase; color: #999; margin-bottom: 20px; }
+  .intro-card-label { font-size: 9px; letter-spacing: 0.16em; text-transform: uppercase; color: #666; margin-bottom: 20px; }
   .intro-card-title { font-family: 'Libre Baskerville', serif; font-size: 16px; font-weight: 700; color: #111; line-height: 1.3; margin-bottom: 8px; }
-  .intro-card-role { font-size: 10px; color: #555; margin-bottom: 4px; letter-spacing: 0.02em; }
-  .intro-card-year { font-size: 9px; color: #999; margin-bottom: 14px; letter-spacing: 0.06em; }
-  .intro-card-desc { font-size: 10px; color: #777; line-height: 1.7; border-top: 0.5px solid #ddd; padding-top: 12px; }
+  .intro-card-role { font-size: 10px; color: #333; margin-bottom: 4px; letter-spacing: 0.02em; }
+  .intro-card-year { font-size: 9px; color: #666; margin-bottom: 14px; letter-spacing: 0.06em; }
+  .intro-card-desc { font-size: 10px; color: #444; line-height: 1.7; border-top: 0.5px solid #ddd; padding-top: 12px; }
 </style>
 </head>
 <body>
@@ -127,11 +131,11 @@
           </div>
         </div>
         <div style="padding:24px;display:flex;flex-direction:column;">
-          <div style="font-size:9px;letter-spacing:0.16em;text-transform:uppercase;color:#999;margin-bottom:20px;">Web App ↗︎</div>
+          <div style="font-size:9px;letter-spacing:0.16em;text-transform:uppercase;color:#666;margin-bottom:20px;">Web App ↗︎</div>
           <div style="font-family:'Libre Baskerville',serif;font-size:16px;font-weight:700;color:#111;line-height:1.3;margin-bottom:8px;">Layout Studio</div>
-          <div style="font-size:10px;color:#555;margin-bottom:4px;letter-spacing:0.02em;">Design · Vibe Coded</div>
-          <div style="font-size:9px;color:#999;margin-bottom:14px;letter-spacing:0.06em;">2026</div>
-          <div style="font-size:10px;color:#777;line-height:1.7;border-top:0.5px solid #ddd;padding-top:12px;">Generates design layouts from the number of shapes you specify.</div>
+          <div style="font-size:10px;color:#333;margin-bottom:4px;letter-spacing:0.02em;">Design · Vibe Coded</div>
+          <div style="font-size:9px;color:#666;margin-bottom:14px;letter-spacing:0.06em;">2026</div>
+          <div style="font-size:10px;color:#444;line-height:1.7;border-top:0.5px solid #ddd;padding-top:12px;">Generates design layouts from the number of shapes you specify.</div>
         </div>
       </a>
       <a href="https://thinksubliminal.github.io/PreviewHero/" target="_blank" style="background:#f5f3ee;border-radius:10px;display:flex;flex-direction:column;text-decoration:none;color:inherit;overflow:hidden;transition:transform 0.2s ease, box-shadow 0.2s ease;" onmouseover="this.style.transform='translateY(-2px)';this.style.boxShadow='0 8px 24px rgba(0,0,0,0.06)'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none'">
@@ -155,12 +159,12 @@
           </div>
         </div>
         <div style="padding:24px;display:flex;flex-direction:column;">
-          <div style="font-size:9px;letter-spacing:0.16em;text-transform:uppercase;color:#999;margin-bottom:20px;">Web App ↗︎</div>
+          <div style="font-size:9px;letter-spacing:0.16em;text-transform:uppercase;color:#666;margin-bottom:20px;">Web App ↗︎</div>
           <div style="font-family:'Libre Baskerville',serif;font-size:16px;font-weight:700;color:#111;line-height:1.3;margin-bottom:8px;">Preview Hero</div>
-          <div style="font-size:10px;color:#555;margin-bottom:4px;letter-spacing:0.02em;">Design · Vibe Coded</div>
-          <div style="font-size:9px;color:#999;margin-bottom:14px;letter-spacing:0.06em;">2026</div>
-          <div style="font-size:10px;color:#777;line-height:1.7;border-top:0.5px solid #ddd;padding-top:12px;">Upload a PNG to test how your design crops when photographed on a phone.</div>
-          <div style="font-size:9px;color:#999;font-style:italic;margin-top:10px;letter-spacing:0.02em;">Best viewed on mobile.</div>
+          <div style="font-size:10px;color:#333;margin-bottom:4px;letter-spacing:0.02em;">Design · Vibe Coded</div>
+          <div style="font-size:9px;color:#666;margin-bottom:14px;letter-spacing:0.06em;">2026</div>
+          <div style="font-size:10px;color:#444;line-height:1.7;border-top:0.5px solid #ddd;padding-top:12px;">Upload a PNG to test how your design crops when photographed on a phone.</div>
+          <div style="font-size:9px;color:#666;font-style:italic;margin-top:10px;letter-spacing:0.02em;">Best viewed on mobile.</div>
         </div>
       </a>
     </div>
